@@ -1,0 +1,10 @@
+|circuito_combinacional
+a => orC.IN0
+a => orA.IN0
+b => orA.IN1
+b => orB.IN0
+c => orB.IN1
+c => orC.IN1
+o <= o~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
