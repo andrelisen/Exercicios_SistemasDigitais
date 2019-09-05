@@ -1,0 +1,9 @@
+|PC
+clk => state~3.DATAIN
+reset => state~5.DATAIN
+Ctrl_mux1 <= Ctrl_mux1.DB_MAX_OUTPUT_PORT_TYPE
+Ctrl_mux2 <= Ctrl_mux2.DB_MAX_OUTPUT_PORT_TYPE
+En_inputs <= En_inputs.DB_MAX_OUTPUT_PORT_TYPE
+En_regAdder <= En_regAdder.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,13 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/andre/Desktop/Programming/VHDL/Em casa/my_and.vhd
+source_file = 1, C:/Users/andre/Desktop/Programming/VHDL/Em casa/Waveform.vwf
+source_file = 1, C:/Users/andre/Desktop/Programming/VHDL/Em casa/db/my_and.cbx.xml
+source_file = 1, c:/altera/13.0/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/altera/13.0/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/altera/13.0/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/altera/13.0/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = my_and
+instance = comp, \o~output , o~output, my_and, 1
+instance = comp, \b~input , b~input, my_and, 1
+instance = comp, \a~input , a~input, my_and, 1
+instance = comp, \o~0 , o~0, my_and, 1

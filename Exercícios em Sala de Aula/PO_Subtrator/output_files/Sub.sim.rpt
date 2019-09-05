@@ -1,0 +1,646 @@
+Simulator report for Sub
+Wed Aug 30 23:49:33 2017
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 318 nodes    ;
+; Simulation Coverage         ;      41.82 % ;
+; Total Number of Transitions ; 493          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone III  ;
++-----------------------------+--------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                               ;
++--------------------------------------------------------------------------------------------+-------------------------------------+---------------+
+; Option                                                                                     ; Setting                             ; Default Value ;
++--------------------------------------------------------------------------------------------+-------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                          ; Timing        ;
+; Start time                                                                                 ; 0 ns                                ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                 ;               ;
+; Vector input source                                                                        ; C:/Designs/Quartus/Sub/Waveform.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                  ; On            ;
+; Check outputs                                                                              ; Off                                 ; Off           ;
+; Report simulation coverage                                                                 ; On                                  ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                  ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                  ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                  ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                 ; Off           ;
+; Detect glitches                                                                            ; Off                                 ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                 ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                 ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                 ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                 ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                  ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                          ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                 ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                 ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                ; Auto          ;
+; Interconnect Delay Model Type                                                              ; Transport                           ; Transport     ;
+; Cell Delay Model Type                                                                      ; Transport                           ; Transport     ;
++--------------------------------------------------------------------------------------------+-------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      41.82 % ;
+; Total nodes checked                                 ; 318          ;
+; Total output ports checked                          ; 318          ;
+; Total output ports with complete 1/0-value coverage ; 133          ;
+; Total output ports with no 1/0-value coverage       ; 164          ;
+; Total output ports with no 1-value coverage         ; 171          ;
+; Total output ports with no 0-value coverage         ; 178          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                    ;
++--------------------------------------+--------------------------------------+------------------+
+; Node Name                            ; Output Port Name                     ; Output Port Type ;
++--------------------------------------+--------------------------------------+------------------+
+; |PO_Sub|clk                          ; |PO_Sub|clk                          ; out              ;
+; |PO_Sub|Ctrl_mux1                    ; |PO_Sub|Ctrl_mux1                    ; out              ;
+; |PO_Sub|Ctrl_mux2                    ; |PO_Sub|Ctrl_mux2                    ; out              ;
+; |PO_Sub|En_inputs                    ; |PO_Sub|En_inputs                    ; out              ;
+; |PO_Sub|En_regAdder                  ; |PO_Sub|En_regAdder                  ; out              ;
+; |PO_Sub|c_top[3]                     ; |PO_Sub|c_top[3]                     ; pin_out          ;
+; |PO_Sub|c_top[4]                     ; |PO_Sub|c_top[4]                     ; pin_out          ;
+; |PO_Sub|c_top[5]                     ; |PO_Sub|c_top[5]                     ; pin_out          ;
+; |PO_Sub|c_top[6]                     ; |PO_Sub|c_top[6]                     ; pin_out          ;
+; |PO_Sub|c_top[7]                     ; |PO_Sub|c_top[7]                     ; pin_out          ;
+; |PO_Sub|c_top[8]                     ; |PO_Sub|c_top[8]                     ; pin_out          ;
+; |PO_Sub|c_top[9]                     ; |PO_Sub|c_top[9]                     ; pin_out          ;
+; |PO_Sub|c_top[10]                    ; |PO_Sub|c_top[10]                    ; pin_out          ;
+; |PO_Sub|c_top[11]                    ; |PO_Sub|c_top[11]                    ; pin_out          ;
+; |PO_Sub|c_top[12]                    ; |PO_Sub|c_top[12]                    ; pin_out          ;
+; |PO_Sub|c_top[13]                    ; |PO_Sub|c_top[13]                    ; pin_out          ;
+; |PO_Sub|c_top[14]                    ; |PO_Sub|c_top[14]                    ; pin_out          ;
+; |PO_Sub|c_top[15]                    ; |PO_Sub|c_top[15]                    ; pin_out          ;
+; |PO_Sub|outMux1_view[0]              ; |PO_Sub|outMux1_view[0]              ; pin_out          ;
+; |PO_Sub|outMux1_view[3]              ; |PO_Sub|outMux1_view[3]              ; pin_out          ;
+; |PO_Sub|outMux2_view[0]              ; |PO_Sub|outMux2_view[0]              ; pin_out          ;
+; |PO_Sub|outMux2_view[1]              ; |PO_Sub|outMux2_view[1]              ; pin_out          ;
+; |PO_Sub|outMux2_view[3]              ; |PO_Sub|outMux2_view[3]              ; pin_out          ;
+; |PO_Sub|outMux2_view[4]              ; |PO_Sub|outMux2_view[4]              ; pin_out          ;
+; |PO_Sub|outMux2_view[5]              ; |PO_Sub|outMux2_view[5]              ; pin_out          ;
+; |PO_Sub|outMux2_view[6]              ; |PO_Sub|outMux2_view[6]              ; pin_out          ;
+; |PO_Sub|outMux2_view[7]              ; |PO_Sub|outMux2_view[7]              ; pin_out          ;
+; |PO_Sub|outMux2_view[8]              ; |PO_Sub|outMux2_view[8]              ; pin_out          ;
+; |PO_Sub|outMux2_view[9]              ; |PO_Sub|outMux2_view[9]              ; pin_out          ;
+; |PO_Sub|outMux2_view[10]             ; |PO_Sub|outMux2_view[10]             ; pin_out          ;
+; |PO_Sub|outMux2_view[11]             ; |PO_Sub|outMux2_view[11]             ; pin_out          ;
+; |PO_Sub|outMux2_view[12]             ; |PO_Sub|outMux2_view[12]             ; pin_out          ;
+; |PO_Sub|outMux2_view[13]             ; |PO_Sub|outMux2_view[13]             ; pin_out          ;
+; |PO_Sub|outMux2_view[14]             ; |PO_Sub|outMux2_view[14]             ; pin_out          ;
+; |PO_Sub|outMux2_view[15]             ; |PO_Sub|outMux2_view[15]             ; pin_out          ;
+; |PO_Sub|outAdder_view[0]             ; |PO_Sub|outAdder_view[0]             ; pin_out          ;
+; |PO_Sub|outAdder_view[1]             ; |PO_Sub|outAdder_view[1]             ; pin_out          ;
+; |PO_Sub|outAdder_view[3]             ; |PO_Sub|outAdder_view[3]             ; pin_out          ;
+; |PO_Sub|outAdder_view[4]             ; |PO_Sub|outAdder_view[4]             ; pin_out          ;
+; |PO_Sub|outAdder_view[5]             ; |PO_Sub|outAdder_view[5]             ; pin_out          ;
+; |PO_Sub|outAdder_view[6]             ; |PO_Sub|outAdder_view[6]             ; pin_out          ;
+; |PO_Sub|outAdder_view[7]             ; |PO_Sub|outAdder_view[7]             ; pin_out          ;
+; |PO_Sub|outAdder_view[8]             ; |PO_Sub|outAdder_view[8]             ; pin_out          ;
+; |PO_Sub|outAdder_view[9]             ; |PO_Sub|outAdder_view[9]             ; pin_out          ;
+; |PO_Sub|outAdder_view[10]            ; |PO_Sub|outAdder_view[10]            ; pin_out          ;
+; |PO_Sub|outAdder_view[11]            ; |PO_Sub|outAdder_view[11]            ; pin_out          ;
+; |PO_Sub|outAdder_view[12]            ; |PO_Sub|outAdder_view[12]            ; pin_out          ;
+; |PO_Sub|outAdder_view[13]            ; |PO_Sub|outAdder_view[13]            ; pin_out          ;
+; |PO_Sub|outAdder_view[14]            ; |PO_Sub|outAdder_view[14]            ; pin_out          ;
+; |PO_Sub|outAdder_view[15]            ; |PO_Sub|outAdder_view[15]            ; pin_out          ;
+; |PO_Sub|outRegAdder_view[3]          ; |PO_Sub|outRegAdder_view[3]          ; pin_out          ;
+; |PO_Sub|outRegAdder_view[4]          ; |PO_Sub|outRegAdder_view[4]          ; pin_out          ;
+; |PO_Sub|outRegAdder_view[5]          ; |PO_Sub|outRegAdder_view[5]          ; pin_out          ;
+; |PO_Sub|outRegAdder_view[6]          ; |PO_Sub|outRegAdder_view[6]          ; pin_out          ;
+; |PO_Sub|outRegAdder_view[7]          ; |PO_Sub|outRegAdder_view[7]          ; pin_out          ;
+; |PO_Sub|outRegAdder_view[8]          ; |PO_Sub|outRegAdder_view[8]          ; pin_out          ;
+; |PO_Sub|outRegAdder_view[9]          ; |PO_Sub|outRegAdder_view[9]          ; pin_out          ;
+; |PO_Sub|outRegAdder_view[10]         ; |PO_Sub|outRegAdder_view[10]         ; pin_out          ;
+; |PO_Sub|outRegAdder_view[11]         ; |PO_Sub|outRegAdder_view[11]         ; pin_out          ;
+; |PO_Sub|outRegAdder_view[12]         ; |PO_Sub|outRegAdder_view[12]         ; pin_out          ;
+; |PO_Sub|outRegAdder_view[13]         ; |PO_Sub|outRegAdder_view[13]         ; pin_out          ;
+; |PO_Sub|outRegAdder_view[14]         ; |PO_Sub|outRegAdder_view[14]         ; pin_out          ;
+; |PO_Sub|outRegAdder_view[15]         ; |PO_Sub|outRegAdder_view[15]         ; pin_out          ;
+; |PO_Sub|registerNbits:RegAdder|q[3]  ; |PO_Sub|registerNbits:RegAdder|q[3]  ; regout           ;
+; |PO_Sub|registerNbits:RegAdder|q[4]  ; |PO_Sub|registerNbits:RegAdder|q[4]  ; regout           ;
+; |PO_Sub|registerNbits:RegAdder|q[5]  ; |PO_Sub|registerNbits:RegAdder|q[5]  ; regout           ;
+; |PO_Sub|registerNbits:RegAdder|q[6]  ; |PO_Sub|registerNbits:RegAdder|q[6]  ; regout           ;
+; |PO_Sub|registerNbits:RegAdder|q[7]  ; |PO_Sub|registerNbits:RegAdder|q[7]  ; regout           ;
+; |PO_Sub|registerNbits:RegAdder|q[8]  ; |PO_Sub|registerNbits:RegAdder|q[8]  ; regout           ;
+; |PO_Sub|registerNbits:RegAdder|q[9]  ; |PO_Sub|registerNbits:RegAdder|q[9]  ; regout           ;
+; |PO_Sub|registerNbits:RegAdder|q[10] ; |PO_Sub|registerNbits:RegAdder|q[10] ; regout           ;
+; |PO_Sub|registerNbits:RegAdder|q[11] ; |PO_Sub|registerNbits:RegAdder|q[11] ; regout           ;
+; |PO_Sub|registerNbits:RegAdder|q[12] ; |PO_Sub|registerNbits:RegAdder|q[12] ; regout           ;
+; |PO_Sub|registerNbits:RegAdder|q[13] ; |PO_Sub|registerNbits:RegAdder|q[13] ; regout           ;
+; |PO_Sub|registerNbits:RegAdder|q[14] ; |PO_Sub|registerNbits:RegAdder|q[14] ; regout           ;
+; |PO_Sub|registerNbits:RegAdder|q[15] ; |PO_Sub|registerNbits:RegAdder|q[15] ; regout           ;
+; |PO_Sub|mux2p1:Mux2|result[15]       ; |PO_Sub|mux2p1:Mux2|result[15]       ; out              ;
+; |PO_Sub|mux2p1:Mux2|result[14]       ; |PO_Sub|mux2p1:Mux2|result[14]       ; out              ;
+; |PO_Sub|mux2p1:Mux2|result[13]       ; |PO_Sub|mux2p1:Mux2|result[13]       ; out              ;
+; |PO_Sub|mux2p1:Mux2|result[12]       ; |PO_Sub|mux2p1:Mux2|result[12]       ; out              ;
+; |PO_Sub|mux2p1:Mux2|result[11]       ; |PO_Sub|mux2p1:Mux2|result[11]       ; out              ;
+; |PO_Sub|mux2p1:Mux2|result[10]       ; |PO_Sub|mux2p1:Mux2|result[10]       ; out              ;
+; |PO_Sub|mux2p1:Mux2|result[9]        ; |PO_Sub|mux2p1:Mux2|result[9]        ; out              ;
+; |PO_Sub|mux2p1:Mux2|result[8]        ; |PO_Sub|mux2p1:Mux2|result[8]        ; out              ;
+; |PO_Sub|mux2p1:Mux2|result[7]        ; |PO_Sub|mux2p1:Mux2|result[7]        ; out              ;
+; |PO_Sub|mux2p1:Mux2|result[6]        ; |PO_Sub|mux2p1:Mux2|result[6]        ; out              ;
+; |PO_Sub|mux2p1:Mux2|result[5]        ; |PO_Sub|mux2p1:Mux2|result[5]        ; out              ;
+; |PO_Sub|mux2p1:Mux2|result[4]        ; |PO_Sub|mux2p1:Mux2|result[4]        ; out              ;
+; |PO_Sub|mux2p1:Mux2|result[3]        ; |PO_Sub|mux2p1:Mux2|result[3]        ; out              ;
+; |PO_Sub|mux2p1:Mux2|result[1]        ; |PO_Sub|mux2p1:Mux2|result[1]        ; out              ;
+; |PO_Sub|mux2p1:Mux2|result[0]        ; |PO_Sub|mux2p1:Mux2|result[0]        ; out              ;
+; |PO_Sub|mux2p1:Mux1|result[3]        ; |PO_Sub|mux2p1:Mux1|result[3]        ; out              ;
+; |PO_Sub|mux2p1:Mux1|result[0]        ; |PO_Sub|mux2p1:Mux1|result[0]        ; out              ;
+; |PO_Sub|adder:Add|Add0~0             ; |PO_Sub|adder:Add|Add0~0             ; out0             ;
+; |PO_Sub|adder:Add|Add0~1             ; |PO_Sub|adder:Add|Add0~1             ; out0             ;
+; |PO_Sub|adder:Add|Add0~2             ; |PO_Sub|adder:Add|Add0~2             ; out0             ;
+; |PO_Sub|adder:Add|Add0~12            ; |PO_Sub|adder:Add|Add0~12            ; out0             ;
+; |PO_Sub|adder:Add|Add0~13            ; |PO_Sub|adder:Add|Add0~13            ; out0             ;
+; |PO_Sub|adder:Add|Add0~15            ; |PO_Sub|adder:Add|Add0~15            ; out0             ;
+; |PO_Sub|adder:Add|Add0~17            ; |PO_Sub|adder:Add|Add0~17            ; out0             ;
+; |PO_Sub|adder:Add|Add0~18            ; |PO_Sub|adder:Add|Add0~18            ; out0             ;
+; |PO_Sub|adder:Add|Add0~21            ; |PO_Sub|adder:Add|Add0~21            ; out0             ;
+; |PO_Sub|adder:Add|Add0~22            ; |PO_Sub|adder:Add|Add0~22            ; out0             ;
+; |PO_Sub|adder:Add|Add0~23            ; |PO_Sub|adder:Add|Add0~23            ; out0             ;
+; |PO_Sub|adder:Add|Add0~26            ; |PO_Sub|adder:Add|Add0~26            ; out0             ;
+; |PO_Sub|adder:Add|Add0~27            ; |PO_Sub|adder:Add|Add0~27            ; out0             ;
+; |PO_Sub|adder:Add|Add0~28            ; |PO_Sub|adder:Add|Add0~28            ; out0             ;
+; |PO_Sub|adder:Add|Add0~31            ; |PO_Sub|adder:Add|Add0~31            ; out0             ;
+; |PO_Sub|adder:Add|Add0~32            ; |PO_Sub|adder:Add|Add0~32            ; out0             ;
+; |PO_Sub|adder:Add|Add0~33            ; |PO_Sub|adder:Add|Add0~33            ; out0             ;
+; |PO_Sub|adder:Add|Add0~36            ; |PO_Sub|adder:Add|Add0~36            ; out0             ;
+; |PO_Sub|adder:Add|Add0~37            ; |PO_Sub|adder:Add|Add0~37            ; out0             ;
+; |PO_Sub|adder:Add|Add0~38            ; |PO_Sub|adder:Add|Add0~38            ; out0             ;
+; |PO_Sub|adder:Add|Add0~41            ; |PO_Sub|adder:Add|Add0~41            ; out0             ;
+; |PO_Sub|adder:Add|Add0~42            ; |PO_Sub|adder:Add|Add0~42            ; out0             ;
+; |PO_Sub|adder:Add|Add0~43            ; |PO_Sub|adder:Add|Add0~43            ; out0             ;
+; |PO_Sub|adder:Add|Add0~46            ; |PO_Sub|adder:Add|Add0~46            ; out0             ;
+; |PO_Sub|adder:Add|Add0~47            ; |PO_Sub|adder:Add|Add0~47            ; out0             ;
+; |PO_Sub|adder:Add|Add0~48            ; |PO_Sub|adder:Add|Add0~48            ; out0             ;
+; |PO_Sub|adder:Add|Add0~51            ; |PO_Sub|adder:Add|Add0~51            ; out0             ;
+; |PO_Sub|adder:Add|Add0~52            ; |PO_Sub|adder:Add|Add0~52            ; out0             ;
+; |PO_Sub|adder:Add|Add0~53            ; |PO_Sub|adder:Add|Add0~53            ; out0             ;
+; |PO_Sub|adder:Add|Add0~56            ; |PO_Sub|adder:Add|Add0~56            ; out0             ;
+; |PO_Sub|adder:Add|Add0~57            ; |PO_Sub|adder:Add|Add0~57            ; out0             ;
+; |PO_Sub|adder:Add|Add0~58            ; |PO_Sub|adder:Add|Add0~58            ; out0             ;
+; |PO_Sub|adder:Add|Add0~61            ; |PO_Sub|adder:Add|Add0~61            ; out0             ;
+; |PO_Sub|adder:Add|Add0~62            ; |PO_Sub|adder:Add|Add0~62            ; out0             ;
+; |PO_Sub|adder:Add|Add0~63            ; |PO_Sub|adder:Add|Add0~63            ; out0             ;
+; |PO_Sub|adder:Add|Add0~66            ; |PO_Sub|adder:Add|Add0~66            ; out0             ;
+; |PO_Sub|adder:Add|Add0~67            ; |PO_Sub|adder:Add|Add0~67            ; out0             ;
+; |PO_Sub|adder:Add|Add0~68            ; |PO_Sub|adder:Add|Add0~68            ; out0             ;
+; |PO_Sub|adder:Add|Add0~71            ; |PO_Sub|adder:Add|Add0~71            ; out0             ;
+; |PO_Sub|adder:Add|Add0~72            ; |PO_Sub|adder:Add|Add0~72            ; out0             ;
++--------------------------------------+--------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                     ;
++-------------------------------------+-------------------------------------+------------------+
+; Node Name                           ; Output Port Name                    ; Output Port Type ;
++-------------------------------------+-------------------------------------+------------------+
+; |PO_Sub|a_top[0]                    ; |PO_Sub|a_top[0]                    ; out              ;
+; |PO_Sub|a_top[1]                    ; |PO_Sub|a_top[1]                    ; out              ;
+; |PO_Sub|a_top[2]                    ; |PO_Sub|a_top[2]                    ; out              ;
+; |PO_Sub|a_top[3]                    ; |PO_Sub|a_top[3]                    ; out              ;
+; |PO_Sub|a_top[4]                    ; |PO_Sub|a_top[4]                    ; out              ;
+; |PO_Sub|a_top[5]                    ; |PO_Sub|a_top[5]                    ; out              ;
+; |PO_Sub|a_top[6]                    ; |PO_Sub|a_top[6]                    ; out              ;
+; |PO_Sub|a_top[7]                    ; |PO_Sub|a_top[7]                    ; out              ;
+; |PO_Sub|a_top[8]                    ; |PO_Sub|a_top[8]                    ; out              ;
+; |PO_Sub|a_top[9]                    ; |PO_Sub|a_top[9]                    ; out              ;
+; |PO_Sub|a_top[10]                   ; |PO_Sub|a_top[10]                   ; out              ;
+; |PO_Sub|a_top[11]                   ; |PO_Sub|a_top[11]                   ; out              ;
+; |PO_Sub|a_top[12]                   ; |PO_Sub|a_top[12]                   ; out              ;
+; |PO_Sub|a_top[13]                   ; |PO_Sub|a_top[13]                   ; out              ;
+; |PO_Sub|a_top[14]                   ; |PO_Sub|a_top[14]                   ; out              ;
+; |PO_Sub|a_top[15]                   ; |PO_Sub|a_top[15]                   ; out              ;
+; |PO_Sub|b_top[0]                    ; |PO_Sub|b_top[0]                    ; out              ;
+; |PO_Sub|b_top[1]                    ; |PO_Sub|b_top[1]                    ; out              ;
+; |PO_Sub|b_top[2]                    ; |PO_Sub|b_top[2]                    ; out              ;
+; |PO_Sub|b_top[3]                    ; |PO_Sub|b_top[3]                    ; out              ;
+; |PO_Sub|b_top[4]                    ; |PO_Sub|b_top[4]                    ; out              ;
+; |PO_Sub|b_top[5]                    ; |PO_Sub|b_top[5]                    ; out              ;
+; |PO_Sub|b_top[6]                    ; |PO_Sub|b_top[6]                    ; out              ;
+; |PO_Sub|b_top[7]                    ; |PO_Sub|b_top[7]                    ; out              ;
+; |PO_Sub|b_top[8]                    ; |PO_Sub|b_top[8]                    ; out              ;
+; |PO_Sub|b_top[9]                    ; |PO_Sub|b_top[9]                    ; out              ;
+; |PO_Sub|b_top[10]                   ; |PO_Sub|b_top[10]                   ; out              ;
+; |PO_Sub|b_top[11]                   ; |PO_Sub|b_top[11]                   ; out              ;
+; |PO_Sub|b_top[12]                   ; |PO_Sub|b_top[12]                   ; out              ;
+; |PO_Sub|b_top[13]                   ; |PO_Sub|b_top[13]                   ; out              ;
+; |PO_Sub|b_top[14]                   ; |PO_Sub|b_top[14]                   ; out              ;
+; |PO_Sub|b_top[15]                   ; |PO_Sub|b_top[15]                   ; out              ;
+; |PO_Sub|c_top[0]                    ; |PO_Sub|c_top[0]                    ; pin_out          ;
+; |PO_Sub|outMux1_view[1]             ; |PO_Sub|outMux1_view[1]             ; pin_out          ;
+; |PO_Sub|outMux1_view[2]             ; |PO_Sub|outMux1_view[2]             ; pin_out          ;
+; |PO_Sub|outMux1_view[4]             ; |PO_Sub|outMux1_view[4]             ; pin_out          ;
+; |PO_Sub|outMux1_view[5]             ; |PO_Sub|outMux1_view[5]             ; pin_out          ;
+; |PO_Sub|outMux1_view[6]             ; |PO_Sub|outMux1_view[6]             ; pin_out          ;
+; |PO_Sub|outMux1_view[7]             ; |PO_Sub|outMux1_view[7]             ; pin_out          ;
+; |PO_Sub|outMux1_view[8]             ; |PO_Sub|outMux1_view[8]             ; pin_out          ;
+; |PO_Sub|outMux1_view[9]             ; |PO_Sub|outMux1_view[9]             ; pin_out          ;
+; |PO_Sub|outMux1_view[10]            ; |PO_Sub|outMux1_view[10]            ; pin_out          ;
+; |PO_Sub|outMux1_view[11]            ; |PO_Sub|outMux1_view[11]            ; pin_out          ;
+; |PO_Sub|outMux1_view[12]            ; |PO_Sub|outMux1_view[12]            ; pin_out          ;
+; |PO_Sub|outMux1_view[13]            ; |PO_Sub|outMux1_view[13]            ; pin_out          ;
+; |PO_Sub|outMux1_view[14]            ; |PO_Sub|outMux1_view[14]            ; pin_out          ;
+; |PO_Sub|outMux1_view[15]            ; |PO_Sub|outMux1_view[15]            ; pin_out          ;
+; |PO_Sub|outRegAdder_view[0]         ; |PO_Sub|outRegAdder_view[0]         ; pin_out          ;
+; |PO_Sub|outRegA_view[0]             ; |PO_Sub|outRegA_view[0]             ; pin_out          ;
+; |PO_Sub|outRegA_view[1]             ; |PO_Sub|outRegA_view[1]             ; pin_out          ;
+; |PO_Sub|outRegA_view[2]             ; |PO_Sub|outRegA_view[2]             ; pin_out          ;
+; |PO_Sub|outRegA_view[4]             ; |PO_Sub|outRegA_view[4]             ; pin_out          ;
+; |PO_Sub|outRegA_view[5]             ; |PO_Sub|outRegA_view[5]             ; pin_out          ;
+; |PO_Sub|outRegA_view[6]             ; |PO_Sub|outRegA_view[6]             ; pin_out          ;
+; |PO_Sub|outRegA_view[7]             ; |PO_Sub|outRegA_view[7]             ; pin_out          ;
+; |PO_Sub|outRegA_view[8]             ; |PO_Sub|outRegA_view[8]             ; pin_out          ;
+; |PO_Sub|outRegA_view[9]             ; |PO_Sub|outRegA_view[9]             ; pin_out          ;
+; |PO_Sub|outRegA_view[10]            ; |PO_Sub|outRegA_view[10]            ; pin_out          ;
+; |PO_Sub|outRegA_view[11]            ; |PO_Sub|outRegA_view[11]            ; pin_out          ;
+; |PO_Sub|outRegA_view[12]            ; |PO_Sub|outRegA_view[12]            ; pin_out          ;
+; |PO_Sub|outRegA_view[13]            ; |PO_Sub|outRegA_view[13]            ; pin_out          ;
+; |PO_Sub|outRegA_view[14]            ; |PO_Sub|outRegA_view[14]            ; pin_out          ;
+; |PO_Sub|outRegA_view[15]            ; |PO_Sub|outRegA_view[15]            ; pin_out          ;
+; |PO_Sub|outRegB_view[0]             ; |PO_Sub|outRegB_view[0]             ; pin_out          ;
+; |PO_Sub|outRegB_view[2]             ; |PO_Sub|outRegB_view[2]             ; pin_out          ;
+; |PO_Sub|outRegB_view[3]             ; |PO_Sub|outRegB_view[3]             ; pin_out          ;
+; |PO_Sub|outRegB_view[4]             ; |PO_Sub|outRegB_view[4]             ; pin_out          ;
+; |PO_Sub|outRegB_view[5]             ; |PO_Sub|outRegB_view[5]             ; pin_out          ;
+; |PO_Sub|outRegB_view[6]             ; |PO_Sub|outRegB_view[6]             ; pin_out          ;
+; |PO_Sub|outRegB_view[7]             ; |PO_Sub|outRegB_view[7]             ; pin_out          ;
+; |PO_Sub|outRegB_view[8]             ; |PO_Sub|outRegB_view[8]             ; pin_out          ;
+; |PO_Sub|outRegB_view[9]             ; |PO_Sub|outRegB_view[9]             ; pin_out          ;
+; |PO_Sub|outRegB_view[10]            ; |PO_Sub|outRegB_view[10]            ; pin_out          ;
+; |PO_Sub|outRegB_view[11]            ; |PO_Sub|outRegB_view[11]            ; pin_out          ;
+; |PO_Sub|outRegB_view[12]            ; |PO_Sub|outRegB_view[12]            ; pin_out          ;
+; |PO_Sub|outRegB_view[13]            ; |PO_Sub|outRegB_view[13]            ; pin_out          ;
+; |PO_Sub|outRegB_view[14]            ; |PO_Sub|outRegB_view[14]            ; pin_out          ;
+; |PO_Sub|outRegB_view[15]            ; |PO_Sub|outRegB_view[15]            ; pin_out          ;
+; |PO_Sub|outInv_view[0]              ; |PO_Sub|outInv_view[0]              ; pin_out          ;
+; |PO_Sub|outInv_view[1]              ; |PO_Sub|outInv_view[1]              ; pin_out          ;
+; |PO_Sub|outInv_view[2]              ; |PO_Sub|outInv_view[2]              ; pin_out          ;
+; |PO_Sub|outInv_view[3]              ; |PO_Sub|outInv_view[3]              ; pin_out          ;
+; |PO_Sub|outInv_view[4]              ; |PO_Sub|outInv_view[4]              ; pin_out          ;
+; |PO_Sub|outInv_view[5]              ; |PO_Sub|outInv_view[5]              ; pin_out          ;
+; |PO_Sub|outInv_view[6]              ; |PO_Sub|outInv_view[6]              ; pin_out          ;
+; |PO_Sub|outInv_view[7]              ; |PO_Sub|outInv_view[7]              ; pin_out          ;
+; |PO_Sub|outInv_view[8]              ; |PO_Sub|outInv_view[8]              ; pin_out          ;
+; |PO_Sub|outInv_view[9]              ; |PO_Sub|outInv_view[9]              ; pin_out          ;
+; |PO_Sub|outInv_view[10]             ; |PO_Sub|outInv_view[10]             ; pin_out          ;
+; |PO_Sub|outInv_view[11]             ; |PO_Sub|outInv_view[11]             ; pin_out          ;
+; |PO_Sub|outInv_view[12]             ; |PO_Sub|outInv_view[12]             ; pin_out          ;
+; |PO_Sub|outInv_view[13]             ; |PO_Sub|outInv_view[13]             ; pin_out          ;
+; |PO_Sub|outInv_view[14]             ; |PO_Sub|outInv_view[14]             ; pin_out          ;
+; |PO_Sub|outInv_view[15]             ; |PO_Sub|outInv_view[15]             ; pin_out          ;
+; |PO_Sub|registerNbits:RegAdder|q[0] ; |PO_Sub|registerNbits:RegAdder|q[0] ; regout           ;
+; |PO_Sub|registerNbits:RegB|q[0]     ; |PO_Sub|registerNbits:RegB|q[0]     ; regout           ;
+; |PO_Sub|registerNbits:RegB|q[2]     ; |PO_Sub|registerNbits:RegB|q[2]     ; regout           ;
+; |PO_Sub|registerNbits:RegB|q[3]     ; |PO_Sub|registerNbits:RegB|q[3]     ; regout           ;
+; |PO_Sub|registerNbits:RegB|q[4]     ; |PO_Sub|registerNbits:RegB|q[4]     ; regout           ;
+; |PO_Sub|registerNbits:RegB|q[5]     ; |PO_Sub|registerNbits:RegB|q[5]     ; regout           ;
+; |PO_Sub|registerNbits:RegB|q[6]     ; |PO_Sub|registerNbits:RegB|q[6]     ; regout           ;
+; |PO_Sub|registerNbits:RegB|q[7]     ; |PO_Sub|registerNbits:RegB|q[7]     ; regout           ;
+; |PO_Sub|registerNbits:RegB|q[8]     ; |PO_Sub|registerNbits:RegB|q[8]     ; regout           ;
+; |PO_Sub|registerNbits:RegB|q[9]     ; |PO_Sub|registerNbits:RegB|q[9]     ; regout           ;
+; |PO_Sub|registerNbits:RegB|q[10]    ; |PO_Sub|registerNbits:RegB|q[10]    ; regout           ;
+; |PO_Sub|registerNbits:RegB|q[11]    ; |PO_Sub|registerNbits:RegB|q[11]    ; regout           ;
+; |PO_Sub|registerNbits:RegB|q[12]    ; |PO_Sub|registerNbits:RegB|q[12]    ; regout           ;
+; |PO_Sub|registerNbits:RegB|q[13]    ; |PO_Sub|registerNbits:RegB|q[13]    ; regout           ;
+; |PO_Sub|registerNbits:RegB|q[14]    ; |PO_Sub|registerNbits:RegB|q[14]    ; regout           ;
+; |PO_Sub|registerNbits:RegB|q[15]    ; |PO_Sub|registerNbits:RegB|q[15]    ; regout           ;
+; |PO_Sub|registerNbits:RegA|q[0]     ; |PO_Sub|registerNbits:RegA|q[0]     ; regout           ;
+; |PO_Sub|registerNbits:RegA|q[1]     ; |PO_Sub|registerNbits:RegA|q[1]     ; regout           ;
+; |PO_Sub|registerNbits:RegA|q[2]     ; |PO_Sub|registerNbits:RegA|q[2]     ; regout           ;
+; |PO_Sub|registerNbits:RegA|q[4]     ; |PO_Sub|registerNbits:RegA|q[4]     ; regout           ;
+; |PO_Sub|registerNbits:RegA|q[5]     ; |PO_Sub|registerNbits:RegA|q[5]     ; regout           ;
+; |PO_Sub|registerNbits:RegA|q[6]     ; |PO_Sub|registerNbits:RegA|q[6]     ; regout           ;
+; |PO_Sub|registerNbits:RegA|q[7]     ; |PO_Sub|registerNbits:RegA|q[7]     ; regout           ;
+; |PO_Sub|registerNbits:RegA|q[8]     ; |PO_Sub|registerNbits:RegA|q[8]     ; regout           ;
+; |PO_Sub|registerNbits:RegA|q[9]     ; |PO_Sub|registerNbits:RegA|q[9]     ; regout           ;
+; |PO_Sub|registerNbits:RegA|q[10]    ; |PO_Sub|registerNbits:RegA|q[10]    ; regout           ;
+; |PO_Sub|registerNbits:RegA|q[11]    ; |PO_Sub|registerNbits:RegA|q[11]    ; regout           ;
+; |PO_Sub|registerNbits:RegA|q[12]    ; |PO_Sub|registerNbits:RegA|q[12]    ; regout           ;
+; |PO_Sub|registerNbits:RegA|q[13]    ; |PO_Sub|registerNbits:RegA|q[13]    ; regout           ;
+; |PO_Sub|registerNbits:RegA|q[14]    ; |PO_Sub|registerNbits:RegA|q[14]    ; regout           ;
+; |PO_Sub|registerNbits:RegA|q[15]    ; |PO_Sub|registerNbits:RegA|q[15]    ; regout           ;
+; |PO_Sub|mux2p1:Mux1|result[15]      ; |PO_Sub|mux2p1:Mux1|result[15]      ; out              ;
+; |PO_Sub|mux2p1:Mux1|result[14]      ; |PO_Sub|mux2p1:Mux1|result[14]      ; out              ;
+; |PO_Sub|mux2p1:Mux1|result[13]      ; |PO_Sub|mux2p1:Mux1|result[13]      ; out              ;
+; |PO_Sub|mux2p1:Mux1|result[12]      ; |PO_Sub|mux2p1:Mux1|result[12]      ; out              ;
+; |PO_Sub|mux2p1:Mux1|result[11]      ; |PO_Sub|mux2p1:Mux1|result[11]      ; out              ;
+; |PO_Sub|mux2p1:Mux1|result[10]      ; |PO_Sub|mux2p1:Mux1|result[10]      ; out              ;
+; |PO_Sub|mux2p1:Mux1|result[9]       ; |PO_Sub|mux2p1:Mux1|result[9]       ; out              ;
+; |PO_Sub|mux2p1:Mux1|result[8]       ; |PO_Sub|mux2p1:Mux1|result[8]       ; out              ;
+; |PO_Sub|mux2p1:Mux1|result[7]       ; |PO_Sub|mux2p1:Mux1|result[7]       ; out              ;
+; |PO_Sub|mux2p1:Mux1|result[6]       ; |PO_Sub|mux2p1:Mux1|result[6]       ; out              ;
+; |PO_Sub|mux2p1:Mux1|result[5]       ; |PO_Sub|mux2p1:Mux1|result[5]       ; out              ;
+; |PO_Sub|mux2p1:Mux1|result[4]       ; |PO_Sub|mux2p1:Mux1|result[4]       ; out              ;
+; |PO_Sub|mux2p1:Mux1|result[2]       ; |PO_Sub|mux2p1:Mux1|result[2]       ; out              ;
+; |PO_Sub|mux2p1:Mux1|result[1]       ; |PO_Sub|mux2p1:Mux1|result[1]       ; out              ;
+; |PO_Sub|adder:Add|Add0~3            ; |PO_Sub|adder:Add|Add0~3            ; out0             ;
+; |PO_Sub|adder:Add|Add0~4            ; |PO_Sub|adder:Add|Add0~4            ; out0             ;
+; |PO_Sub|adder:Add|Add0~5            ; |PO_Sub|adder:Add|Add0~5            ; out0             ;
+; |PO_Sub|adder:Add|Add0~6            ; |PO_Sub|adder:Add|Add0~6            ; out0             ;
+; |PO_Sub|adder:Add|Add0~8            ; |PO_Sub|adder:Add|Add0~8            ; out0             ;
+; |PO_Sub|adder:Add|Add0~9            ; |PO_Sub|adder:Add|Add0~9            ; out0             ;
+; |PO_Sub|adder:Add|Add0~10           ; |PO_Sub|adder:Add|Add0~10           ; out0             ;
+; |PO_Sub|adder:Add|Add0~11           ; |PO_Sub|adder:Add|Add0~11           ; out0             ;
+; |PO_Sub|adder:Add|Add0~14           ; |PO_Sub|adder:Add|Add0~14           ; out0             ;
+; |PO_Sub|adder:Add|Add0~16           ; |PO_Sub|adder:Add|Add0~16           ; out0             ;
+; |PO_Sub|adder:Add|Add0~19           ; |PO_Sub|adder:Add|Add0~19           ; out0             ;
+; |PO_Sub|adder:Add|Add0~20           ; |PO_Sub|adder:Add|Add0~20           ; out0             ;
+; |PO_Sub|adder:Add|Add0~24           ; |PO_Sub|adder:Add|Add0~24           ; out0             ;
+; |PO_Sub|adder:Add|Add0~25           ; |PO_Sub|adder:Add|Add0~25           ; out0             ;
+; |PO_Sub|adder:Add|Add0~29           ; |PO_Sub|adder:Add|Add0~29           ; out0             ;
+; |PO_Sub|adder:Add|Add0~30           ; |PO_Sub|adder:Add|Add0~30           ; out0             ;
+; |PO_Sub|adder:Add|Add0~34           ; |PO_Sub|adder:Add|Add0~34           ; out0             ;
+; |PO_Sub|adder:Add|Add0~35           ; |PO_Sub|adder:Add|Add0~35           ; out0             ;
+; |PO_Sub|adder:Add|Add0~39           ; |PO_Sub|adder:Add|Add0~39           ; out0             ;
+; |PO_Sub|adder:Add|Add0~40           ; |PO_Sub|adder:Add|Add0~40           ; out0             ;
+; |PO_Sub|adder:Add|Add0~44           ; |PO_Sub|adder:Add|Add0~44           ; out0             ;
+; |PO_Sub|adder:Add|Add0~45           ; |PO_Sub|adder:Add|Add0~45           ; out0             ;
+; |PO_Sub|adder:Add|Add0~49           ; |PO_Sub|adder:Add|Add0~49           ; out0             ;
+; |PO_Sub|adder:Add|Add0~50           ; |PO_Sub|adder:Add|Add0~50           ; out0             ;
+; |PO_Sub|adder:Add|Add0~54           ; |PO_Sub|adder:Add|Add0~54           ; out0             ;
+; |PO_Sub|adder:Add|Add0~55           ; |PO_Sub|adder:Add|Add0~55           ; out0             ;
+; |PO_Sub|adder:Add|Add0~59           ; |PO_Sub|adder:Add|Add0~59           ; out0             ;
+; |PO_Sub|adder:Add|Add0~60           ; |PO_Sub|adder:Add|Add0~60           ; out0             ;
+; |PO_Sub|adder:Add|Add0~64           ; |PO_Sub|adder:Add|Add0~64           ; out0             ;
+; |PO_Sub|adder:Add|Add0~65           ; |PO_Sub|adder:Add|Add0~65           ; out0             ;
+; |PO_Sub|adder:Add|Add0~69           ; |PO_Sub|adder:Add|Add0~69           ; out0             ;
+; |PO_Sub|adder:Add|Add0~70           ; |PO_Sub|adder:Add|Add0~70           ; out0             ;
++-------------------------------------+-------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                     ;
++-------------------------------------+-------------------------------------+------------------+
+; Node Name                           ; Output Port Name                    ; Output Port Type ;
++-------------------------------------+-------------------------------------+------------------+
+; |PO_Sub|a_top[0]                    ; |PO_Sub|a_top[0]                    ; out              ;
+; |PO_Sub|a_top[1]                    ; |PO_Sub|a_top[1]                    ; out              ;
+; |PO_Sub|a_top[2]                    ; |PO_Sub|a_top[2]                    ; out              ;
+; |PO_Sub|a_top[3]                    ; |PO_Sub|a_top[3]                    ; out              ;
+; |PO_Sub|a_top[4]                    ; |PO_Sub|a_top[4]                    ; out              ;
+; |PO_Sub|a_top[5]                    ; |PO_Sub|a_top[5]                    ; out              ;
+; |PO_Sub|a_top[6]                    ; |PO_Sub|a_top[6]                    ; out              ;
+; |PO_Sub|a_top[7]                    ; |PO_Sub|a_top[7]                    ; out              ;
+; |PO_Sub|a_top[8]                    ; |PO_Sub|a_top[8]                    ; out              ;
+; |PO_Sub|a_top[9]                    ; |PO_Sub|a_top[9]                    ; out              ;
+; |PO_Sub|a_top[10]                   ; |PO_Sub|a_top[10]                   ; out              ;
+; |PO_Sub|a_top[11]                   ; |PO_Sub|a_top[11]                   ; out              ;
+; |PO_Sub|a_top[12]                   ; |PO_Sub|a_top[12]                   ; out              ;
+; |PO_Sub|a_top[13]                   ; |PO_Sub|a_top[13]                   ; out              ;
+; |PO_Sub|a_top[14]                   ; |PO_Sub|a_top[14]                   ; out              ;
+; |PO_Sub|a_top[15]                   ; |PO_Sub|a_top[15]                   ; out              ;
+; |PO_Sub|b_top[0]                    ; |PO_Sub|b_top[0]                    ; out              ;
+; |PO_Sub|b_top[1]                    ; |PO_Sub|b_top[1]                    ; out              ;
+; |PO_Sub|b_top[2]                    ; |PO_Sub|b_top[2]                    ; out              ;
+; |PO_Sub|b_top[3]                    ; |PO_Sub|b_top[3]                    ; out              ;
+; |PO_Sub|b_top[4]                    ; |PO_Sub|b_top[4]                    ; out              ;
+; |PO_Sub|b_top[5]                    ; |PO_Sub|b_top[5]                    ; out              ;
+; |PO_Sub|b_top[6]                    ; |PO_Sub|b_top[6]                    ; out              ;
+; |PO_Sub|b_top[7]                    ; |PO_Sub|b_top[7]                    ; out              ;
+; |PO_Sub|b_top[8]                    ; |PO_Sub|b_top[8]                    ; out              ;
+; |PO_Sub|b_top[9]                    ; |PO_Sub|b_top[9]                    ; out              ;
+; |PO_Sub|b_top[10]                   ; |PO_Sub|b_top[10]                   ; out              ;
+; |PO_Sub|b_top[11]                   ; |PO_Sub|b_top[11]                   ; out              ;
+; |PO_Sub|b_top[12]                   ; |PO_Sub|b_top[12]                   ; out              ;
+; |PO_Sub|b_top[13]                   ; |PO_Sub|b_top[13]                   ; out              ;
+; |PO_Sub|b_top[14]                   ; |PO_Sub|b_top[14]                   ; out              ;
+; |PO_Sub|b_top[15]                   ; |PO_Sub|b_top[15]                   ; out              ;
+; |PO_Sub|c_top[0]                    ; |PO_Sub|c_top[0]                    ; pin_out          ;
+; |PO_Sub|c_top[1]                    ; |PO_Sub|c_top[1]                    ; pin_out          ;
+; |PO_Sub|c_top[2]                    ; |PO_Sub|c_top[2]                    ; pin_out          ;
+; |PO_Sub|outMux1_view[1]             ; |PO_Sub|outMux1_view[1]             ; pin_out          ;
+; |PO_Sub|outMux1_view[2]             ; |PO_Sub|outMux1_view[2]             ; pin_out          ;
+; |PO_Sub|outMux1_view[4]             ; |PO_Sub|outMux1_view[4]             ; pin_out          ;
+; |PO_Sub|outMux1_view[5]             ; |PO_Sub|outMux1_view[5]             ; pin_out          ;
+; |PO_Sub|outMux1_view[6]             ; |PO_Sub|outMux1_view[6]             ; pin_out          ;
+; |PO_Sub|outMux1_view[7]             ; |PO_Sub|outMux1_view[7]             ; pin_out          ;
+; |PO_Sub|outMux1_view[8]             ; |PO_Sub|outMux1_view[8]             ; pin_out          ;
+; |PO_Sub|outMux1_view[9]             ; |PO_Sub|outMux1_view[9]             ; pin_out          ;
+; |PO_Sub|outMux1_view[10]            ; |PO_Sub|outMux1_view[10]            ; pin_out          ;
+; |PO_Sub|outMux1_view[11]            ; |PO_Sub|outMux1_view[11]            ; pin_out          ;
+; |PO_Sub|outMux1_view[12]            ; |PO_Sub|outMux1_view[12]            ; pin_out          ;
+; |PO_Sub|outMux1_view[13]            ; |PO_Sub|outMux1_view[13]            ; pin_out          ;
+; |PO_Sub|outMux1_view[14]            ; |PO_Sub|outMux1_view[14]            ; pin_out          ;
+; |PO_Sub|outMux1_view[15]            ; |PO_Sub|outMux1_view[15]            ; pin_out          ;
+; |PO_Sub|outMux2_view[2]             ; |PO_Sub|outMux2_view[2]             ; pin_out          ;
+; |PO_Sub|outAdder_view[2]            ; |PO_Sub|outAdder_view[2]            ; pin_out          ;
+; |PO_Sub|outRegAdder_view[0]         ; |PO_Sub|outRegAdder_view[0]         ; pin_out          ;
+; |PO_Sub|outRegAdder_view[1]         ; |PO_Sub|outRegAdder_view[1]         ; pin_out          ;
+; |PO_Sub|outRegAdder_view[2]         ; |PO_Sub|outRegAdder_view[2]         ; pin_out          ;
+; |PO_Sub|outRegA_view[0]             ; |PO_Sub|outRegA_view[0]             ; pin_out          ;
+; |PO_Sub|outRegA_view[1]             ; |PO_Sub|outRegA_view[1]             ; pin_out          ;
+; |PO_Sub|outRegA_view[2]             ; |PO_Sub|outRegA_view[2]             ; pin_out          ;
+; |PO_Sub|outRegA_view[3]             ; |PO_Sub|outRegA_view[3]             ; pin_out          ;
+; |PO_Sub|outRegA_view[4]             ; |PO_Sub|outRegA_view[4]             ; pin_out          ;
+; |PO_Sub|outRegA_view[5]             ; |PO_Sub|outRegA_view[5]             ; pin_out          ;
+; |PO_Sub|outRegA_view[6]             ; |PO_Sub|outRegA_view[6]             ; pin_out          ;
+; |PO_Sub|outRegA_view[7]             ; |PO_Sub|outRegA_view[7]             ; pin_out          ;
+; |PO_Sub|outRegA_view[8]             ; |PO_Sub|outRegA_view[8]             ; pin_out          ;
+; |PO_Sub|outRegA_view[9]             ; |PO_Sub|outRegA_view[9]             ; pin_out          ;
+; |PO_Sub|outRegA_view[10]            ; |PO_Sub|outRegA_view[10]            ; pin_out          ;
+; |PO_Sub|outRegA_view[11]            ; |PO_Sub|outRegA_view[11]            ; pin_out          ;
+; |PO_Sub|outRegA_view[12]            ; |PO_Sub|outRegA_view[12]            ; pin_out          ;
+; |PO_Sub|outRegA_view[13]            ; |PO_Sub|outRegA_view[13]            ; pin_out          ;
+; |PO_Sub|outRegA_view[14]            ; |PO_Sub|outRegA_view[14]            ; pin_out          ;
+; |PO_Sub|outRegA_view[15]            ; |PO_Sub|outRegA_view[15]            ; pin_out          ;
+; |PO_Sub|outRegB_view[0]             ; |PO_Sub|outRegB_view[0]             ; pin_out          ;
+; |PO_Sub|outRegB_view[1]             ; |PO_Sub|outRegB_view[1]             ; pin_out          ;
+; |PO_Sub|outRegB_view[2]             ; |PO_Sub|outRegB_view[2]             ; pin_out          ;
+; |PO_Sub|outRegB_view[3]             ; |PO_Sub|outRegB_view[3]             ; pin_out          ;
+; |PO_Sub|outRegB_view[4]             ; |PO_Sub|outRegB_view[4]             ; pin_out          ;
+; |PO_Sub|outRegB_view[5]             ; |PO_Sub|outRegB_view[5]             ; pin_out          ;
+; |PO_Sub|outRegB_view[6]             ; |PO_Sub|outRegB_view[6]             ; pin_out          ;
+; |PO_Sub|outRegB_view[7]             ; |PO_Sub|outRegB_view[7]             ; pin_out          ;
+; |PO_Sub|outRegB_view[8]             ; |PO_Sub|outRegB_view[8]             ; pin_out          ;
+; |PO_Sub|outRegB_view[9]             ; |PO_Sub|outRegB_view[9]             ; pin_out          ;
+; |PO_Sub|outRegB_view[10]            ; |PO_Sub|outRegB_view[10]            ; pin_out          ;
+; |PO_Sub|outRegB_view[11]            ; |PO_Sub|outRegB_view[11]            ; pin_out          ;
+; |PO_Sub|outRegB_view[12]            ; |PO_Sub|outRegB_view[12]            ; pin_out          ;
+; |PO_Sub|outRegB_view[13]            ; |PO_Sub|outRegB_view[13]            ; pin_out          ;
+; |PO_Sub|outRegB_view[14]            ; |PO_Sub|outRegB_view[14]            ; pin_out          ;
+; |PO_Sub|outRegB_view[15]            ; |PO_Sub|outRegB_view[15]            ; pin_out          ;
+; |PO_Sub|outInv_view[0]              ; |PO_Sub|outInv_view[0]              ; pin_out          ;
+; |PO_Sub|outInv_view[2]              ; |PO_Sub|outInv_view[2]              ; pin_out          ;
+; |PO_Sub|outInv_view[3]              ; |PO_Sub|outInv_view[3]              ; pin_out          ;
+; |PO_Sub|outInv_view[4]              ; |PO_Sub|outInv_view[4]              ; pin_out          ;
+; |PO_Sub|outInv_view[5]              ; |PO_Sub|outInv_view[5]              ; pin_out          ;
+; |PO_Sub|outInv_view[6]              ; |PO_Sub|outInv_view[6]              ; pin_out          ;
+; |PO_Sub|outInv_view[7]              ; |PO_Sub|outInv_view[7]              ; pin_out          ;
+; |PO_Sub|outInv_view[8]              ; |PO_Sub|outInv_view[8]              ; pin_out          ;
+; |PO_Sub|outInv_view[9]              ; |PO_Sub|outInv_view[9]              ; pin_out          ;
+; |PO_Sub|outInv_view[10]             ; |PO_Sub|outInv_view[10]             ; pin_out          ;
+; |PO_Sub|outInv_view[11]             ; |PO_Sub|outInv_view[11]             ; pin_out          ;
+; |PO_Sub|outInv_view[12]             ; |PO_Sub|outInv_view[12]             ; pin_out          ;
+; |PO_Sub|outInv_view[13]             ; |PO_Sub|outInv_view[13]             ; pin_out          ;
+; |PO_Sub|outInv_view[14]             ; |PO_Sub|outInv_view[14]             ; pin_out          ;
+; |PO_Sub|outInv_view[15]             ; |PO_Sub|outInv_view[15]             ; pin_out          ;
+; |PO_Sub|registerNbits:RegAdder|q[0] ; |PO_Sub|registerNbits:RegAdder|q[0] ; regout           ;
+; |PO_Sub|registerNbits:RegAdder|q[1] ; |PO_Sub|registerNbits:RegAdder|q[1] ; regout           ;
+; |PO_Sub|registerNbits:RegAdder|q[2] ; |PO_Sub|registerNbits:RegAdder|q[2] ; regout           ;
+; |PO_Sub|registerNbits:RegB|q[0]     ; |PO_Sub|registerNbits:RegB|q[0]     ; regout           ;
+; |PO_Sub|registerNbits:RegB|q[1]     ; |PO_Sub|registerNbits:RegB|q[1]     ; regout           ;
+; |PO_Sub|registerNbits:RegB|q[2]     ; |PO_Sub|registerNbits:RegB|q[2]     ; regout           ;
+; |PO_Sub|registerNbits:RegB|q[3]     ; |PO_Sub|registerNbits:RegB|q[3]     ; regout           ;
+; |PO_Sub|registerNbits:RegB|q[4]     ; |PO_Sub|registerNbits:RegB|q[4]     ; regout           ;
+; |PO_Sub|registerNbits:RegB|q[5]     ; |PO_Sub|registerNbits:RegB|q[5]     ; regout           ;
+; |PO_Sub|registerNbits:RegB|q[6]     ; |PO_Sub|registerNbits:RegB|q[6]     ; regout           ;
+; |PO_Sub|registerNbits:RegB|q[7]     ; |PO_Sub|registerNbits:RegB|q[7]     ; regout           ;
+; |PO_Sub|registerNbits:RegB|q[8]     ; |PO_Sub|registerNbits:RegB|q[8]     ; regout           ;
+; |PO_Sub|registerNbits:RegB|q[9]     ; |PO_Sub|registerNbits:RegB|q[9]     ; regout           ;
+; |PO_Sub|registerNbits:RegB|q[10]    ; |PO_Sub|registerNbits:RegB|q[10]    ; regout           ;
+; |PO_Sub|registerNbits:RegB|q[11]    ; |PO_Sub|registerNbits:RegB|q[11]    ; regout           ;
+; |PO_Sub|registerNbits:RegB|q[12]    ; |PO_Sub|registerNbits:RegB|q[12]    ; regout           ;
+; |PO_Sub|registerNbits:RegB|q[13]    ; |PO_Sub|registerNbits:RegB|q[13]    ; regout           ;
+; |PO_Sub|registerNbits:RegB|q[14]    ; |PO_Sub|registerNbits:RegB|q[14]    ; regout           ;
+; |PO_Sub|registerNbits:RegB|q[15]    ; |PO_Sub|registerNbits:RegB|q[15]    ; regout           ;
+; |PO_Sub|registerNbits:RegA|q[0]     ; |PO_Sub|registerNbits:RegA|q[0]     ; regout           ;
+; |PO_Sub|registerNbits:RegA|q[1]     ; |PO_Sub|registerNbits:RegA|q[1]     ; regout           ;
+; |PO_Sub|registerNbits:RegA|q[2]     ; |PO_Sub|registerNbits:RegA|q[2]     ; regout           ;
+; |PO_Sub|registerNbits:RegA|q[3]     ; |PO_Sub|registerNbits:RegA|q[3]     ; regout           ;
+; |PO_Sub|registerNbits:RegA|q[4]     ; |PO_Sub|registerNbits:RegA|q[4]     ; regout           ;
+; |PO_Sub|registerNbits:RegA|q[5]     ; |PO_Sub|registerNbits:RegA|q[5]     ; regout           ;
+; |PO_Sub|registerNbits:RegA|q[6]     ; |PO_Sub|registerNbits:RegA|q[6]     ; regout           ;
+; |PO_Sub|registerNbits:RegA|q[7]     ; |PO_Sub|registerNbits:RegA|q[7]     ; regout           ;
+; |PO_Sub|registerNbits:RegA|q[8]     ; |PO_Sub|registerNbits:RegA|q[8]     ; regout           ;
+; |PO_Sub|registerNbits:RegA|q[9]     ; |PO_Sub|registerNbits:RegA|q[9]     ; regout           ;
+; |PO_Sub|registerNbits:RegA|q[10]    ; |PO_Sub|registerNbits:RegA|q[10]    ; regout           ;
+; |PO_Sub|registerNbits:RegA|q[11]    ; |PO_Sub|registerNbits:RegA|q[11]    ; regout           ;
+; |PO_Sub|registerNbits:RegA|q[12]    ; |PO_Sub|registerNbits:RegA|q[12]    ; regout           ;
+; |PO_Sub|registerNbits:RegA|q[13]    ; |PO_Sub|registerNbits:RegA|q[13]    ; regout           ;
+; |PO_Sub|registerNbits:RegA|q[14]    ; |PO_Sub|registerNbits:RegA|q[14]    ; regout           ;
+; |PO_Sub|registerNbits:RegA|q[15]    ; |PO_Sub|registerNbits:RegA|q[15]    ; regout           ;
+; |PO_Sub|mux2p1:Mux2|result[2]       ; |PO_Sub|mux2p1:Mux2|result[2]       ; out              ;
+; |PO_Sub|mux2p1:Mux1|result[15]      ; |PO_Sub|mux2p1:Mux1|result[15]      ; out              ;
+; |PO_Sub|mux2p1:Mux1|result[14]      ; |PO_Sub|mux2p1:Mux1|result[14]      ; out              ;
+; |PO_Sub|mux2p1:Mux1|result[13]      ; |PO_Sub|mux2p1:Mux1|result[13]      ; out              ;
+; |PO_Sub|mux2p1:Mux1|result[12]      ; |PO_Sub|mux2p1:Mux1|result[12]      ; out              ;
+; |PO_Sub|mux2p1:Mux1|result[11]      ; |PO_Sub|mux2p1:Mux1|result[11]      ; out              ;
+; |PO_Sub|mux2p1:Mux1|result[10]      ; |PO_Sub|mux2p1:Mux1|result[10]      ; out              ;
+; |PO_Sub|mux2p1:Mux1|result[9]       ; |PO_Sub|mux2p1:Mux1|result[9]       ; out              ;
+; |PO_Sub|mux2p1:Mux1|result[8]       ; |PO_Sub|mux2p1:Mux1|result[8]       ; out              ;
+; |PO_Sub|mux2p1:Mux1|result[7]       ; |PO_Sub|mux2p1:Mux1|result[7]       ; out              ;
+; |PO_Sub|mux2p1:Mux1|result[6]       ; |PO_Sub|mux2p1:Mux1|result[6]       ; out              ;
+; |PO_Sub|mux2p1:Mux1|result[5]       ; |PO_Sub|mux2p1:Mux1|result[5]       ; out              ;
+; |PO_Sub|mux2p1:Mux1|result[4]       ; |PO_Sub|mux2p1:Mux1|result[4]       ; out              ;
+; |PO_Sub|mux2p1:Mux1|result[2]       ; |PO_Sub|mux2p1:Mux1|result[2]       ; out              ;
+; |PO_Sub|mux2p1:Mux1|result[1]       ; |PO_Sub|mux2p1:Mux1|result[1]       ; out              ;
+; |PO_Sub|adder:Add|Add0~4            ; |PO_Sub|adder:Add|Add0~4            ; out0             ;
+; |PO_Sub|adder:Add|Add0~5            ; |PO_Sub|adder:Add|Add0~5            ; out0             ;
+; |PO_Sub|adder:Add|Add0~7            ; |PO_Sub|adder:Add|Add0~7            ; out0             ;
+; |PO_Sub|adder:Add|Add0~9            ; |PO_Sub|adder:Add|Add0~9            ; out0             ;
+; |PO_Sub|adder:Add|Add0~10           ; |PO_Sub|adder:Add|Add0~10           ; out0             ;
+; |PO_Sub|adder:Add|Add0~19           ; |PO_Sub|adder:Add|Add0~19           ; out0             ;
+; |PO_Sub|adder:Add|Add0~20           ; |PO_Sub|adder:Add|Add0~20           ; out0             ;
+; |PO_Sub|adder:Add|Add0~24           ; |PO_Sub|adder:Add|Add0~24           ; out0             ;
+; |PO_Sub|adder:Add|Add0~25           ; |PO_Sub|adder:Add|Add0~25           ; out0             ;
+; |PO_Sub|adder:Add|Add0~29           ; |PO_Sub|adder:Add|Add0~29           ; out0             ;
+; |PO_Sub|adder:Add|Add0~30           ; |PO_Sub|adder:Add|Add0~30           ; out0             ;
+; |PO_Sub|adder:Add|Add0~34           ; |PO_Sub|adder:Add|Add0~34           ; out0             ;
+; |PO_Sub|adder:Add|Add0~35           ; |PO_Sub|adder:Add|Add0~35           ; out0             ;
+; |PO_Sub|adder:Add|Add0~39           ; |PO_Sub|adder:Add|Add0~39           ; out0             ;
+; |PO_Sub|adder:Add|Add0~40           ; |PO_Sub|adder:Add|Add0~40           ; out0             ;
+; |PO_Sub|adder:Add|Add0~44           ; |PO_Sub|adder:Add|Add0~44           ; out0             ;
+; |PO_Sub|adder:Add|Add0~45           ; |PO_Sub|adder:Add|Add0~45           ; out0             ;
+; |PO_Sub|adder:Add|Add0~49           ; |PO_Sub|adder:Add|Add0~49           ; out0             ;
+; |PO_Sub|adder:Add|Add0~50           ; |PO_Sub|adder:Add|Add0~50           ; out0             ;
+; |PO_Sub|adder:Add|Add0~54           ; |PO_Sub|adder:Add|Add0~54           ; out0             ;
+; |PO_Sub|adder:Add|Add0~55           ; |PO_Sub|adder:Add|Add0~55           ; out0             ;
+; |PO_Sub|adder:Add|Add0~59           ; |PO_Sub|adder:Add|Add0~59           ; out0             ;
+; |PO_Sub|adder:Add|Add0~60           ; |PO_Sub|adder:Add|Add0~60           ; out0             ;
+; |PO_Sub|adder:Add|Add0~64           ; |PO_Sub|adder:Add|Add0~64           ; out0             ;
+; |PO_Sub|adder:Add|Add0~65           ; |PO_Sub|adder:Add|Add0~65           ; out0             ;
+; |PO_Sub|adder:Add|Add0~69           ; |PO_Sub|adder:Add|Add0~69           ; out0             ;
+; |PO_Sub|adder:Add|Add0~70           ; |PO_Sub|adder:Add|Add0~70           ; out0             ;
++-------------------------------------+-------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Wed Aug 30 23:49:32 2017
+Info: Command: quartus_sim --simulation_results_format=VWF Sub -c Sub
+Info (324025): Using vector source file "C:/Designs/Quartus/Sub/Waveform.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      41.82 %
+Info (328052): Number of transitions in simulation is 493
+Info (324045): Vector file Sub.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 325 megabytes
+    Info: Processing ended: Wed Aug 30 23:49:33 2017
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

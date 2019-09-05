@@ -1,0 +1,19 @@
+-- Exercício 01
+-- Porta lógica AND descrita em VHDL
+-- Duas entradas: a, b
+-- Uma saída: o
+-- 22 de agosto de 2019
+
+
+	library IEEE; 					--indica a utilização das bibliotecas do inst. de engenheiros e eletrônicos
+	use std_logic_1164.all; 	--utiliza a biblioteca padrão 1164: inserir maiores funcionalidades para a ling
+
+	--Declaração da entidade
+	entity my_and is port 		--maior nívvel de abstração, pode se imaginar uma caixa com duas entradas
+	(
+		a	: std_logic; 			--entrada digital a 
+		b	: std_logic;			--entrada digital b
+		o	: std_logic				--saída digital o
+	);
+	
+	end my_and; 					--fim da declaração da entidade
