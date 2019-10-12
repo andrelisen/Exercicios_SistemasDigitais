@@ -1,0 +1,73 @@
+m255
+K3
+13
+cModel Technology
+dC:\altera\13.0
+Etestbench1
+Z0 w1570734593
+Z1 dC:\Users\andre\Desktop\Exercicios_SistemasDigitais\Em casa\modelsim
+Z2 8C:/Users/andre/Downloads/FPGA010_WR_Files/MODELSIM/tb_xor_gate.vhd
+Z3 FC:/Users/andre/Downloads/FPGA010_WR_Files/MODELSIM/tb_xor_gate.vhd
+l0
+L2
+V]XXZ3Rn>?b=2AJib]^:ZM2
+!s100 _P`2[9d3>VN<zCgW6L`RH1
+Z4 OV;C;10.1d;51
+32
+!i10b 1
+Z5 !s108 1570734626.329000
+Z6 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/andre/Downloads/FPGA010_WR_Files/MODELSIM/tb_xor_gate.vhd|
+Z7 !s107 C:/Users/andre/Downloads/FPGA010_WR_Files/MODELSIM/tb_xor_gate.vhd|
+Z8 o-work work -2002 -explicit -O0
+Z9 tExplicit 1
+Atb_xor_gate
+Z10 DEx4 work 10 testbench1 0 22 ]XXZ3Rn>?b=2AJib]^:ZM2
+Z11 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z12 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+l27
+L11
+Z13 V3Kdj@GAj96BPzi9CBd7;S0
+!s100 fe2ibaEAa6XWYlG]NGDP;0
+R4
+32
+!i10b 1
+R5
+R6
+R7
+R8
+R9
+Exor_gate
+Z14 w1570733243
+R11
+R12
+R1
+Z15 8C:\Users\andre\Desktop\Exercicios_SistemasDigitais\Em casa\modelsim\xor_gate.vhd
+Z16 FC:\Users\andre\Desktop\Exercicios_SistemasDigitais\Em casa\modelsim\xor_gate.vhd
+l0
+L8
+VbOjTGl0XCg??7o4z6JTcM1
+R4
+32
+Z17 !s108 1570734625.768000
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:\Users\andre\Desktop\Exercicios_SistemasDigitais\Em casa\modelsim\xor_gate.vhd|
+Z19 !s107 C:\Users\andre\Desktop\Exercicios_SistemasDigitais\Em casa\modelsim\xor_gate.vhd|
+R8
+R9
+!s100 ToI97Wz6:I4nUOz2D00lZ0
+!i10b 1
+Ahardware
+R11
+R12
+DEx4 work 8 xor_gate 0 22 bOjTGl0XCg??7o4z6JTcM1
+l18
+L16
+V2@IohmiGQ9G13M57lBgCz3
+!s100 ngM6M`_GZ_S49EYOG0hh^2
+R4
+32
+R17
+R18
+R19
+R8
+R9
+!i10b 1

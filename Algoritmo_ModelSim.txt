@@ -1,0 +1,79 @@
+Sistemas digitais 
+1) Como utilizar o ModelSim?
+
+Passo a passo:
+1-abre o model sim
+2-file --> new --> project
+3-em create projetc: project name=nome do projeto; browse=pasta aonde quer salvar;
+4-create new file --> file name = mesmo nome da entity do código em vhdl;
+5-na interface do modelsim ele aparecerá com o status (?)
+6-dá um duplo clique e abre um local de digitar código: pega código feito no quartus e cola
+	*CÓDIGO NO QUARTUS:
+		
+	library IEEE;
+	use IEEE.std_logic_1164.all;
+
+	entity xor_gate is
+	port(
+		in1 : in std_logic;
+		in2 : in std_logic;
+		o : out std_logic
+	);
+	end entity;
+	architecture hardware of xor_gate is 
+
+	begin
+
+	o <= in1 xor in2;
+	
+	end hardware;
+
+ctrl+s PARA SALVAR
+
+
+7-ir em ícone compile
+8-na interface do modelsim: botão direito--> add to project-->new file: file name coloca
+tb_nomeentity; deixa em folder como top level e da um ok
+9-duplo clique no arq criado
+10-lá no arquivo do tb_nome entity: 
+	*declara entity vazia:
+		entity testbench1 is end;
+	* declaração de bibliotecas e pacotes:
+		library IEEE;
+		use IEEE.std_logic_1164.all;
+		use std.textio.all;
+	* declaração da arquitetura
+		architecture tb_xor_gate of testbench1 is
+		
+		component xor_gate
+		port(
+		     in1 : in std_logic;
+		     in2 : in std_logic;
+		     o   : out std_logic);
+		end component;
+	*declarar sinais auxiliares de interconexão para o processo de estímulo
+		signal i_1 : std_logic;
+		signal i_2 : std_logic;
+	*instancia do componente xor_gate p/ interconexão do componente p/ processo de estimulo
+		xor1 : xor_gate 
+		port map(
+			in1 => i_1,
+			in1 => i_1,
+			o => open);
+			
+		estimulo : process
+		begin
+		wait for 5 ns; i_1 <= '0'; i_2 <= '0';
+		wait for 5 ns; i_1 <= '1'; 
+		wait for 5 ns; i_2 <= '1';
+		wait for 5 ns; i_1 <= '0'; 
+		wait
+		
+		end process estimulo;
+	    end tb_xor_gate;
+
+
+11-Depois de compilar -> simulate -> start simulation -> na biblioteca work: pegar testbenchh1[nome da entidade topo] 
+da um ok!
+12- Para ver a forma de onda: clique na sua instancia[nome da instancia = xor no exemplo]-->botão direito --> add wave
+13-escolhe intervalo de tempo onde diz 100ps --> e depois da um run 

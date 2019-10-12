@@ -1,0 +1,6 @@
+Máquina de estados
+Máquina de Mealy = depende tanto do estado atual como das entradas
+Máquina de Moore = depende apenas do estado atual
+
+-----------------------
+Máquina Moore

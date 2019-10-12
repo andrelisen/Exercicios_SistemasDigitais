@@ -1,0 +1,22 @@
+-- Arquivo que será um registrador em borda de subida
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+	entity myreg is
+		port (
+				D, clock : in std_logic;
+				Q : out std_logic
+		
+	);
+end entity;
+
+architecture behavioral of myreg is
+begin
+	process (clock) is
+	begin
+		if (rising_edge(clock)) then
+		Q <= D;
+		end if;
+	end process;
+end architecture behavioral;

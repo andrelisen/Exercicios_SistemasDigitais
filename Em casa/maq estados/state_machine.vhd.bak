@@ -1,0 +1,13 @@
+-- Máquina de estados Moore
+library IEEE;
+use std_logic_1164.all;
+
+
+entity state_machine is 
+port(
+		clk : in bit; --clock para borda de subida
+		rst : in bit; --rst=1, q=00
+		q	 : inout bit_vector(1 downto 0) --saida 
+);
+
+end entity;

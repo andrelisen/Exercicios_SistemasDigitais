@@ -1,0 +1,54 @@
+Para criar um testbench utilizando a ferramenta ModelSim que vem junto com o Quartus 13.0:
+Passo 1) Abrir ModelSim
+Passo 2) File -> new -> project
+	>Insira um nome para o seu projeto e selecione a pasta onde deseja guardar o testBench
+
+Passo 3) Dentro da zona de trabalho crie um novo arquivo: new file
+	>Neste arquivo insira o código criado no Quartus que se deseja validar!
+
+Passo 4) Após a criação desse arquivo, está na hora de criar o nosso arquivo testBench, para isso entre na zona de trabalho e no local em branco clique com o botão di-
+reito -> add -> new file 
+	>Coloque o nome do arquivo de: tb_[NOME DO ARQUIVO QUE SE DESEJA FAZER O TESTBENCH]
+
+Passo 5) No arquivo criado insira os seguintes dados:
+	>Bibliotecas: as mesmas do código do Quartus
+	Exemplo: library IEEE;
+		 use IEEE.std_logic_1164.all;
+	>Crie uma entity vazia com o mesmo nome do seu arquivo
+	Exemplo: entity tb_inicializaReg is 
+	 	  end entity;
+	>Agora está na hora de inserir a descrição da arquitetura:
+	Exemplo: architecture testeBenchRegistradores of tb_inicializaReg is
+	>Após isso devemos declarar um componente, com o mesmo nome do arquivo .vhd do arquivo topo que se deseja fazer o teste, com as mesmas entradas e saídas da 
+entity topo!
+	Exemplo:component Teste_inicializaReg is
+	 	 port(
+	   	   clock : in std_logic;
+	    	   d0 : in std_logic_vector(7 downto 0);  
+		   q0 : out std_logic_vector(7 downto 0)  
+	 	 );   
+	        end component;
+	>Agora se declara um signal para cada porta do componente
+	Exemplo: signal clock_sg : std_logic :='0';
+	 	 signal d0_sg    : std_logic_vector(7 downto 0);
+	 	 signal q0_sg    : std_logic_vector(7 downto 0);
+	>Precisamos "conectar"/mapear nosso teste com o nosso topo, para isso fazemos a declaração de um port map, lembrando que o que vem depois do ":" é o mesmo 
+escrito na declaração do component
+	Exemplo: begin   
+   		 inst_top : Teste_inicializaReg
+     			 port map(
+        		  clock => clock_sg,
+         		  d0 => d0_sg,
+         		  q0 => q0_sg
+      			 ); 
+	>Por fim, vamos inserir dados arbitrários para o clock e portas de entradas
+	Exemplo: clock_sg <= not clock_sg after 20 ns;
+  		 process 
+  		  begin
+    	          wait for 10 ns;
+   		  d0_sg <= "10000000";
+   		  wait;
+  		end process;
+	>Para completar, vamos "fechar" nossa arquitetura
+	Exemplo: end testeBenchRegistradores;
+

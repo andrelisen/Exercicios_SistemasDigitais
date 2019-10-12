@@ -1,0 +1,22 @@
+-- Fazer uma and!
+
+--count: faz o cálculo aqui
+		count_en <= t(1) or t(3);
+		s1: subtractor4 port map (a=>count , b=>c1 , c=>count_less); 
+		count_in <= c10 when (t(1)='1')
+			         else count_less;
+		----------Coloca resultado abaixo------------
+		count_reg: DataRegister
+			 generic map(data_width=>4)
+			  port map(
+				Din=>count_in,
+			        Dout=>count,
+				Enable=>count_en,
+				clk=>clk);
+				
+entity calc is
+	port(
+		a, clk	: in std_logic;
+		b 	: out std_logic
+	);
+	end entity;

@@ -1,0 +1,17 @@
+{C:/Users/andre/Desktop/Exercicios_SistemasDigitais/Em casa/modelsim/xor_gate.vhd} {1 {vcom -work work -2002 -explicit {C:\Users\andre\Desktop\Exercicios_SistemasDigitais\Em casa\modelsim\xor_gate.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity xor_gate
+-- Compiling architecture hardware of xor_gate
+
+} {} {}} C:/Users/andre/Downloads/FPGA010_WR_Files/MODELSIM/tb_xor_gate.vhd {1 {vcom -work work -2002 -explicit C:/Users/andre/Downloads/FPGA010_WR_Files/MODELSIM/tb_xor_gate.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Compiling entity testbench1
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling architecture tb_xor_gate of testbench1
+
+} {} {}}
